@@ -35,6 +35,10 @@ public class Main {
             System.out.println(menu);
          opcion = s.nextInt();
 
+         if (opcion <= 0 || opcion >= 8){
+             System.out.println("Opción no valida.");
+         }
+
          switch (opcion){
              case 1:
                  System.out.println("Ingrese el valor a convertir: ");
